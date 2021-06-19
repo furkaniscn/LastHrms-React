@@ -1,13 +1,13 @@
 import React from "react";
 import {
-    Button,
-    Form,
-    Grid,
-    Header,
-    Image,
-    Message,
-    Segment,
-  } from "semantic-ui-react";
+  Button,
+  Form,
+  Grid,
+  Header,
+  Image,
+  Message,
+  Segment,
+} from "semantic-ui-react";
 
 export default function RegisterEmployer() {
   return (
@@ -39,6 +39,7 @@ export default function RegisterEmployer() {
                 icon="lock"
                 iconPosition="left"
                 placeholder="Şifre"
+                type="password"
               />
             </Grid.Column>
 
