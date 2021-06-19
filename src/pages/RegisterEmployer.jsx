@@ -70,13 +70,13 @@ export default function RegisterEmployer() {
           </Grid>
 
           <br />
-          <Button color="teal" fluid size="large" disabled>
+          <Button color="teal" fluid size="large" type="disabled">
             Kayıt Ol
           </Button>
         </Segment>
       </Form>
       <Message warning>
-        İşveren kayıtlarımız şimdilik aktif değildir
+        İşveren kayıtlarımız çalışanlarımız tarafından onaylandıktan sonra aktif olacaktır
       </Message>
     </div>
   );

@@ -24,7 +24,7 @@ export default function Login() {
             type="password"
           />
 
-          <Button color="teal" fluid size="large" disabled>
+          <Button color="teal" fluid size="large" type="disabled">
             Giriş Yap
           </Button>
         </Segment>
