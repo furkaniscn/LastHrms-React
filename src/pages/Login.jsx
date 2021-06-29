@@ -25,7 +25,7 @@ export default function Login() {
             placeholder="Şifre"
             type="password"
           />
-          <Button color="teal" fluid size="large" disabled>
+          <Button color="teal" fluid size="large" type="sumbit">
             Giriş Yap
           </Button>
         </Segment>

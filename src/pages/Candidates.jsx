@@ -16,28 +16,28 @@ export default function Candidates() {
   return (
     <div>
       <Card.Group>
-          {
-              candidates.map(candidate =>(
-                <Card key={candidate.id} fluid>
-                <Card.Content>
-                  <Card.Header>{candidate.firstName+" "+candidate.lastName}</Card.Header>
-                  <Card.Meta>{candidate.dateOfBirth}</Card.Meta>
-                  <Card.Description>
-                    {candidate.email}
-                  </Card.Description>
-                </Card.Content>
-                <Card.Content extra>
-                  <div className="ui two buttons">
-                    <Button basic color="green" as={Link} to={`/cvs/${candidate.id}`}>
-                      Cvsini Gör
-                    </Button>
-                  </div>
-                </Card.Content>
-              </Card>
-              ))
-          }
-        
-        
+        {
+          candidates.map(candidate => (
+            <Card key={candidate.id} fluid color={"black"}>
+              <Card.Content>
+                <Card.Header>{candidate.firstName + " " + candidate.lastName}</Card.Header>
+                <Card.Meta>{candidate.dateOfBirth}</Card.Meta>
+                <Card.Description>
+                  {candidate.email}
+                </Card.Description>
+              </Card.Content>
+              <Card.Content extra>
+                <div className="ui two buttons">
+                  <Button basic color="green" as={Link} to={`/cvs/${candidate.id}`}>
+                    Cvsini Gör
+                  </Button>
+                </div>
+              </Card.Content>
+            </Card>
+          ))
+        }
+
+
       </Card.Group>
     </div>
   );

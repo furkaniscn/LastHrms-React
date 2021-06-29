@@ -20,11 +20,11 @@ export default function EmployerDetail() {
     jobAdService
       .getActiveAdsByCompanyId(id)
       .then((result) => setJobAds(result.data.data));
-  },[id]);
+  }, [id]);
 
   return (
     <div>
-      <Table celled>
+      <Table celled color={"black"}>
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>İş veren</Table.HeaderCell>
@@ -83,7 +83,7 @@ export default function EmployerDetail() {
         </Table.Body>
       </Table>
 
-      <Card fluid>
+      <Card fluid color={"black"}>
         <Card.Content header="Bu Şirkete Ait İş İlanları" />
         <Card.Content>
           <Table color={"black"}>

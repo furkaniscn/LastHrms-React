@@ -17,7 +17,7 @@ export default function Employers() {
     <div>
       <Card.Group>
         {employers.map((employer) => (
-          <Card fluid key={employer.id}>
+          <Card fluid key={employer.id} color={"black"}>
             <Card.Content>
               <Card.Header>{employer.companyName}</Card.Header>
               <Card.Meta>{employer.webSite}</Card.Meta>
@@ -31,9 +31,9 @@ export default function Employers() {
                 <Button basic color="green" as={Link} to={`/employers/${employer.id}`}>
                   Detaylar
                 </Button>
-                
+
                 <Button basic color="blue">
-                  <a href={"https://"+employer.webSite} target={"_blank"} rel="noopener noreferrer">Web Sitesi</a>                  
+                  <a href={"https://" + employer.webSite} target={"_blank"} rel="noopener noreferrer">Web Sitesi</a>
                 </Button>
               </div>
             </Card.Content>
